@@ -1,0 +1,79 @@
+NF VOCAL 1.0.1 — NF AUDIO TOOLS
+VST3 e Audio Unit (AU) para macOS Intel e Apple Silicon.
+
+INSTALAR
+1. Feche o seu programa de áudio.
+2. Abra o instalador NF-Vocal-1.0.1-macOS.pkg e conclua os passos.
+3. Abra novamente o programa e atualize a lista de plugins.
+No Logic, procure em Audio Units > NF Audio Tools > NF Vocal.
+Em programas VST3, procure NF Vocal.
+O pacote instala em /Library/Audio/Plug-Ins/Components e VST3.
+
+PAINEL
+Arraste a alça do canto inferior direito para redimensionar.
+Dois cliques no logo NF restauram 800 × 488, o tamanho padrão.
+Dois cliques em um fader restauram o valor zero desse fader.
+O tamanho escolhido é mantido ao reabrir a janela e salvo com a sessão.
+O painel abre inicialmente em 800 × 488.
+Os controles podem ser automatizados e são salvos com a sessão.
+
+CONTROLES
+INPUT / OUTPUT: ganho de -24 a +24 dB.
+BASS: corte/reforço de graves; SUB 100 Hz, LOWER 220 Hz, UPPER 400 Hz.
+TREBLE: corte/reforço de brilho; BITE 3 kHz, TOP 6,5 kHz, ROOF 11 kHz.
+BASS e TREBLE: faixa do fader -10 a +10 corresponde a -12 a +12 dB.
+COMPRESS: fader aumenta a compressão e a compensação de ganho.
+PUSH: razão 2:1; SPANK: 4:1; WALL: 10:1. Detector estéreo vinculado.
+REVERB: envio para ambiência TIGHT, LARGE ou CHAMBER.
+DELAY: SLAP de 95 ms, EIGHTH de colcheia, QUARTER de semínima.
+Colcheia e semínima acompanham o andamento informado pelo programa;
+se não houver informação de andamento, o plugin usa 120 BPM.
+PITCH: duplicação com microafinação oposta entre os canais.
+STEREO ±6 cents; WIDE ±10 cents; SPREADER ±16 cents.
+É um efeito de abertura/duplicação vocal, não correção de afinação.
+REVERB, DELAY e PITCH: -10 = envio zero; +10 = envio máximo.
+ON desliga individualmente o processamento de cada módulo.
+BYPASS deixa passar o áudio sem processamento.
+
+PRESETS E COMPARAÇÃO
+Selecione um preset para começar e ajuste INPUT para a sua gravação.
+SAVE/LOAD salvam e abrem arquivos .nfvocal.
+A / B alterna duas configurações temporárias; COPY copia a atual para a outra.
+A configuração ativa é salva com a sessão; as duas memórias de comparação
+são temporárias e permanecem enquanto a janela estiver aberta.
+Os efeitos somados podem aumentar o nível. Ajuste OUTPUT observando o medidor.
+
+SOBRE ESTA VERSÃO
+Processamento original inspirado nas funções da referência fornecida.
+Não contém código, algoritmos ou recursos gráficos da Waves e não foi
+validado como uma reprodução sonora exata do CLA Vocals.
+O logo NF fornecido pelo usuário está incorporado no painel.
+Compilação local com assinatura ad hoc; sem certificado Developer ID
+ou notarização Apple. O macOS pode solicitar liberação nas configurações
+de Privacidade e Segurança ao abrir um pacote obtido fora da App Store.
+
+CÓDIGO-FONTE
+CMakeLists.txt e Source/ contêm o projeto. Para recompilar, use CMake 3.22+
+e JUCE compatível, indicando -DJUCE_SOURCE_DIR=/caminho/para/JUCE.
+A pasta JUCE não está incluída. Consulte a licença do JUCE incluída em
+JUCE-LICENSE.md antes de redistribuir versões compiladas.
+
+CORREÇÕES DA VERSÃO 1.0.1
+- Correção da seleção de preset involuntária ao abrir a janela, que apagava
+  os ajustes de delay/reverb e dos demais módulos.
+- Faders com espaço reservado para a alça nos dois extremos e para os valores.
+- Painel inicial menor; título NF VOCAL centralizado.
+- Redesenho só dos medidores e da redução de ganho, a até 12 atualizações/s.
+- Reverb processado em blocos, cálculos constantes retirados do laço de áudio
+  e coeficientes de EQ recalculados somente durante mudanças.
+
+ATUALIZAR
+Feche a DAW, instale a versão 1.0.1 e abra novamente a DAW.
+O plugin mantém o mesmo identificador da versão anterior para que as sessões
+possam continuar reconhecendo-o. A atualização não recupera valores que já
+haviam sido apagados e salvos pela versão anterior.
+
+REVISÃO DO MENU DE PRESETS
+Os nomes usam separador simples, por exemplo: 01 - Clean / Reset.
+Instalador desta revisão: NF-Vocal-1.0.1-Presets-Fix.pkg.
+Os ajustes sonoros e os identificadores permanecem iguais à versão 1.0.1.

@@ -1,0 +1,41 @@
+NF VOCAL 1.0.1 — validação local de 29/10/2026
+
+CORREÇÕES VERIFICADAS
+- Regressão reproduzida na versão 1.0: abrir a janela disparava uma chamada
+  assíncrona do menu e restaurava o primeiro preset, apagando os ajustes.
+- Versão 1.0.1: três ciclos de abrir/fechar com processamento dos eventos
+  da interface mantêm delay, reverb e seus modos nos valores escolhidos.
+- Estado salvo e recuperado em nova instância mantém os valores e os modos.
+- Preset escolhido pelo usuário continua funcionando. Seleção vazia não reseta.
+- Faders no mínimo e máximo ficam dentro do componente e fora da caixa numérica.
+- Inspeção visual de três imagens do painel compilado, incluindo os extremos.
+- Tamanho inicial 800 × 488; tamanho escolhido mantido ao reabrir.
+- Duplo clique no logo retorna a 800 × 488. Título NF VOCAL centralizado.
+- Áudio mono/estéreo em 44,1/48/96 kHz, seis presets, todos os modos, impulsos,
+  caudas, bypass e blocos de 1 a 4.096 amostras, inclusive maiores que o anunciado.
+- VST3 e AU compilados para x86_64 e arm64; assinatura ad hoc verificada.
+- VST3 carregado pelo gerador de manifesto JUCE/Steinberg.
+
+COMPARAÇÃO DE DESEMPENHO
+Mac Intel, Release, estéreo, 48 kHz, blocos de 256, preset Airy Wide.
+10.000 blocos equivalentes a 53,33 segundos de áudio por execução.
+Medição por relógio de CPU do processo, incluindo a geração do sinal de teste.
+Mediana de três execuções:
+  Versão 1.0:   1.104210 segundos de CPU.
+  Versão 1.0.1: 0.656066 segundos de CPU.
+  Redução: 40.6% no tempo de CPU deste teste.
+As porcentagens não representam o medidor de CPU da DAW nem uma garantia
+para todo projeto. O redesenho da interface foi reduzido separadamente para
+regiões de medidores que mudam, com limite de 12 atualizações por segundo.
+
+LIMITES
+Apple Silicon compilado, mas não executado em hardware Apple Silicon aqui.
+Não foi executada validação auval nem medida a sessão real da DAW do usuário.
+Sem certificado Developer ID ou notarização Apple.
+
+REVISÃO DO TEXTO DE PRESETS
+Separadores trocados por hífen ASCII. Teste automatizado verifica os seis
+nomes do menu, incluindo faixa ASCII imprimível e presença do separador.
+Suíte principal executada novamente com sucesso após esta alteração.
+Identificadores, parâmetros, DSP e versão de bundle 1.0.1 mantidos.
+Instalador desta revisão: NF-Vocal-1.0.1-Presets-Fix.pkg.

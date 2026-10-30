@@ -1,0 +1,9 @@
+.DS_Store
+/build*/
+/work/
+/ThirdParty/JUCE/
+*.pkg
+*.zip
+*.vst3/
+*.component/
+CMakeUserPresets.json
