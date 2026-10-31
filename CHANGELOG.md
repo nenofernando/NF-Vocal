@@ -21,3 +21,12 @@
 A combinação Reverb/Delay/Pitch passa de soma paralela a processamento em
 série. Os parâmetros anteriores permanecem identificados, mas presets com
 esses efeitos combinados podem soar diferentes. Consulte INTEGRACAO-MIXA.md.
+
+## Revisão compacta da interface
+
+- Janela padrão reduzida para 800 x 614, ainda redimensionável.
+- Knobs inferiores menores e fileira inferior mais baixa.
+- Aros escuros em repouso; arco dourado somente durante o arraste do knob.
+- Subtítulo e instruções permanentes removidos do painel.
+- Migração do tamanho padrão antigo sem desfazer tamanhos personalizados
+  salvos pelo usuário na revisão compacta.

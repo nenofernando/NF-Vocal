@@ -34,7 +34,7 @@ Acabamento dourado brilhante nos faders, knobs, aros, marca e assinatura.
 Logo à esquerda e título centralizado.
 Medidor horizontal de redução de ganho com escala de 0 a 24 dB e valor numérico.
 Duplo clique restaura o valor padrão do controle. Duplo clique no logo
-restaura a janela para 1000 x 839. PITCH é duplicação com microafinação;
+restaura a janela para 800 x 614. PITCH é duplicação com microafinação;
 não é correção automática de afinação. Presets de fábrica restauram também
 a sequência original. Presets antigos recebem o roteamento padrão e novos
 controles em valores neutros.
@@ -61,3 +61,7 @@ Feche a DAW. Copie `NF Vocal.vst3` para VST3 e `NF Vocal.component` para
 Components em `~/Library/Audio/Plug-Ins/`. Substitua a cópia anterior e
 atualize a lista da DAW. Binários com assinatura ad hoc, sem notarização.
 Consulte JUCE-LICENSE.md antes de redistribuir.
+
+Revisão visual compacta: knobs inferiores menores, aros escuros em repouso
+e arco dourado somente durante o arraste. Textos de orientação e subtítulo
+foram removidos do painel. A ajuda de operação permanece neste arquivo.

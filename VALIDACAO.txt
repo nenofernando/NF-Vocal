@@ -35,3 +35,7 @@ Medição local de CPU (preset Airy Wide, 48 kHz, estéreo, blocos de 256):
 10.000 blocos / 53,33 s de áudio em 1,13 s de CPU (aprox. 2,12%).
 Medição sintética no equipamento local; não representa todos os presets,
 as configurações máximas ou a carga total dentro da Mixa/DAW.
+
+Revisão compacta: compilação universal e testes completos repetidos com
+sucesso; captura real verificada em janela padrão 800 x 614. Geometria dos
+faders movidos à fileira inferior continua validada. DSP sem alterações.

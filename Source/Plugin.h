@@ -15,7 +15,7 @@ public:
  bool setChainOrder(const Order&);
  void moveModule(int module,int target);
  void preset(int);
- std::atomic<int> editorWidth{1000};
+ std::atomic<int> editorWidth{800};
  std::atomic<float> inMeter{-100},outMeter{-100},reduction{0};
  void prepareToPlay(double,int) override;
  void releaseResources() override {}
