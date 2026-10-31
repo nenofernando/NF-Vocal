@@ -1,0 +1,13 @@
+Ferramenta: geração de imagem integrada (image_gen), sem CLI/API externa.
+Recurso final: Assets/Signature.png, PNG dourado com transparência.
+Referência: assinatura pessoal fornecida e aprovada pelo autor nesta conversa.
+
+Prompt final:
+Make ONE precise local edit to this gold signature. The F at lower left has ONE short crossbar, currently horizontal. Rotate ONLY this short crossbar around its intersection with the F diagonal stem so it becomes PARALLEL TO THE LONG DIAGONAL UNDERLINE ABOVE IT (the large upper signature underline running from lower-left to upper-right). That long upper underline rises to the right by approximately 21 degrees: give the F short crossbar the EXACT SAME rising-right angle. The short crossbar must remain a single perfectly straight segment, same existing length, same gold thickness, same intersection position, with tapered tips. Do NOT rotate the F stem or any other stroke. Preserve every other pixel, all signature letterforms, repeated n, flourishes, golden color, transparent background and layout. Only slope the single straight F crossbar to match the larger diagonal line immediately above it.
+
+A captura NF-Vocal-Print-Real.png é renderizada diretamente pelo editor JUCE
+compilado; a proposta visual anterior foi uma imagem conceitual gerada.
+
+Versão 1.2.0: o editor JUCE usa o canal alfa desta imagem como máscara e
+aplica um gradiente dourado brilhante por código. O desenho aprovado é preservado;
+a imagem-base dourada continua sendo o recurso de origem.
